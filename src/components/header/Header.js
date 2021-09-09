@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { mainRoutes } from "../../routes/mainRoutes";
-import Navigation from "../Navigation/Navigation";
+import Navigation from "../navigation/Navigation";
+
 import { HeaderStyled } from "./HeaderStyled";
 
 class Header extends Component {

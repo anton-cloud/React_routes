@@ -5,7 +5,7 @@ import ProductPage from "../page/ProductPage";
 
 export const mainRoutes = [
   { name: "Home", path: "/", exact: true, component: HomePage},
-  { name: "Product", path: "/product", exact: true, component: ProductPage},
+  { name: "Products", path: "/products", exact: false, component: ProductPage},
   { name: "Administration", path: "/administration", exact: true, component: AdministrationPage },
   { name: "Cart", path: "/cart", exact: true, component: CartPAge },
 ];
