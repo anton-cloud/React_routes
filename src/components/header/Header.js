@@ -1,20 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import { mainRoutes } from "../../routes/mainRoutes";
 import Navigation from "../navigation/Navigation";
-
 import { HeaderStyled } from "./HeaderStyled";
+import { withRouter } from 'react-router-dom'
 
-class Header extends Component {
-  state = {};
-  render() {
-    return (
-      <>
+const Header = ({location}) => {
+  return (
+          <>
         <HeaderStyled>
-          <Navigation routes={mainRoutes}/>
+        <Navigation routes={mainRoutes} prevPathName={location.pathname}/>
         </HeaderStyled>
       </>
-    );
-  }
+  );
 }
 
-export default Header;
+export default withRouter(Header);
